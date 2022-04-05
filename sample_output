@@ -2,85 +2,39 @@ Out put of kaggle data on Star Wars character height and weight
 
 ===
 
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.2 (2022-02-06)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia> include("Ltestpkg.jl")
+
 Hello and welcome to the L-test.
 We use the Prime Counting function as a reference data set.
 You have 34 data points.
+The graph is that many numbers, and the count of how many primes they cover each.
+Even and odd number counts are not quite the same but they go up in a messy way like hospital data.
 
-Probability that even and odd halves of the same number of Prime Counts are samples from same population:
+Probability that even and odd Prime Counts from 34 are samples from same population:
 0.8093453444914191
-information derived from that probability:
+
+Information derived from that probability:
 0.3051726685308276
 
 Note the p value is more than 0.5 because the are in reality chosen from the same set.
 Note the information is low because they are not surpising in terms of each other.
 Your null data has the following L-test score:  22.993
-L:      22.993  proferred comparator:   -0.9763593052035074
-L:      22.993  proferred comparator:   -0.5465020045583924
-L:      22.993  proferred comparator:   -0.07033485016227409
-L:      22.993  proferred comparator:   0.4430615790301237
-L:      22.993  proferred comparator:   0.985482099517248
-L:      22.993  proferred comparator:   1.5497701939295885
-L:      22.993  proferred comparator:   2.1298219641233795
-L:      22.993  proferred comparator:   2.7205084346969164
-L:      22.993  proferred comparator:   3.3175652370418782
-L:      22.993  proferred comparator:   3.9174754851359395
-L:      22.993  proferred comparator:   4.517358463179292
-L:      22.993  proferred comparator:   5.114869543144517
-L:      22.993  proferred comparator:   5.708112969448111
-L:      22.993  proferred comparator:   6.295567267039118
-L:      22.993  proferred comparator:   6.876022178777578
-L:      22.993  proferred comparator:   7.44852573132449
-L:      22.993  proferred comparator:   8.012339997496396
-L:      22.993  proferred comparator:   8.566904221380218
-L:      22.993  proferred comparator:   9.111804122883589
-L:      22.993  proferred comparator:   9.646746360851777
-L:      22.993  proferred comparator:   10.17153728898681
-L:      22.993  proferred comparator:   10.686065278162497
-L:      22.993  proferred comparator:   11.190285999718583
-L:      22.993  proferred comparator:   11.684210167199659
-L:      22.993  proferred comparator:   12.16789332035611
-L:      22.993  proferred comparator:   12.64142730710425
-L:      22.993  proferred comparator:   13.104933178667581
-L:      22.993  proferred comparator:   13.558555262262091
-L:      22.993  proferred comparator:   14.002456216190726
-L:      22.993  proferred comparator:   14.43681290557299
-L:      22.993  proferred comparator:   14.861812964416634
-L:      22.993  proferred comparator:   15.277651932390594
-L:      22.993  proferred comparator:   15.684530873347592
-L:      22.993  proferred comparator:   16.08265439808466
-L:      22.993  proferred comparator:   16.47222902660347
-L:      22.993  proferred comparator:   16.85346183571631
-L:      22.993  proferred comparator:   17.22655934662842
-L:      22.993  proferred comparator:   17.591726614430854
-L:      22.993  proferred comparator:   17.94916648752074
-L:      22.993  proferred comparator:   18.29907901004029
-L:      22.993  proferred comparator:   18.64166094466659
-L:      22.993  proferred comparator:   18.977105396634244
-L:      22.993  proferred comparator:   19.30560152284977
-L:      22.993  proferred comparator:   19.62733431245573
-L:      22.993  proferred comparator:   19.942484427306223
-L:      22.993  proferred comparator:   20.25122809258555
-L:      22.993  proferred comparator:   20.553737029296983
-L:      22.993  proferred comparator:   20.850178421609897
-L:      22.993  proferred comparator:   21.14071491312166
-L:      22.993  proferred comparator:   21.42550462699445
-L:      22.993  proferred comparator:   21.704701205693627
-L:      22.993  proferred comparator:   21.978453866704893
-L:      22.993  proferred comparator:   22.246907471160018
-L:      22.993  proferred comparator:   22.51020260277068
-L:      22.993  proferred comparator:   22.768475654870116
-L:      22.993  proferred comparator:   23.0218589237023
-That is the same amount of disinformation as claiming that after the Prime Counts up to your number of data points the following integers :
-[35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90]
-have one prime each.
-Which gives additional estimates thus:   [1.0, 0.75, 0.6666666666666666, 0.5, 0.5, 0.5, 0.42857142857142855, 0.4375, 0.4444444444444444, 0.4, 0.4090909090909091, 0.375, 0.34615384615384615, 0.35714285714285715, 0.36666666666666664, 0.34375, 0.3235294117647059, 0.02857142857142857, 0.027777777777777776, 0.02702702702702703, 0.02631578947368421, 0.02564102564102564, 0.025, 0.024390243902439025, 0.023809523809523808, 0.023255813953488372, 0.022727272727272728, 0.022222222222222223, 0.021739130434782608, 0.02127659574468085, 0.020833333333333332, 0.02040816326530612, 0.02, 0.0196078431372549, 0.019230769230769232, 0.018867924528301886, 0.018518518518518517, 0.01818181818181818, 0.017857142857142856, 0.017543859649122806, 0.017241379310344827, 0.01694915254237288, 0.016666666666666666, 0.01639344262295082, 0.016129032258064516, 0.015873015873015872, 0.015625, 0.015384615384615385, 0.015151515151515152, 0.014925373134328358, 0.014705882352941176, 0.014492753623188406, 0.014285714285714285, 0.014084507042253521, 0.013888888888888888, 0.0136986301369863, 0.013513513513513514, 0.013333333333333334, 0.013157894736842105, 0.012987012987012988, 0.01282051282051282, 0.012658227848101266, 0.0125, 0.012345679012345678, 0.012195121951219513, 0.012048192771084338, 0.011904761904761904, 0.011764705882352941, 0.011627906976744186, 0.011494252873563218, 0.011363636363636364, 0.011235955056179775, 0.011111111111111112]
-Spoiling evens with these gives a spoiled p of: 1.4040447160844863e-6
-Which is an absolute increase in disinformation of:     19.136807017397285
-And a disinformation ratio of:  23.0218589237023
+
+To get the same false difference between odd and even we need   19      false counts of 1 integer.
+Spoiling evens with these gives a spoiled p of:         0.004668162853886273
+Which is an absolute increase in disinformation of:     7.437756724238557
+And a prime count disinformation ratio of:              24.37228982544752
 
 
 
 passed build primes
-passed build count
-passed build xs over log xs
 passed all tests
